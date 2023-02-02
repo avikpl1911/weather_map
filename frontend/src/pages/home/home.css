@@ -1,0 +1,34 @@
+.Home{
+    height: 100vh;
+    width: 100vw;
+}
+
+.HomeWrapper{
+    margin: 50px 10px;
+}
+
+.cityContainer{
+    border: solid;
+    border-color: black;
+    display: flex;
+    position: relative;
+    
+
+}
+
+.cityName{
+    align-items: flex-end;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
+}
+
+.cityButton{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    right: 0;
+    height: 100%;
+}
