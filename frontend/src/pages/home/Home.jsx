@@ -13,7 +13,7 @@ export default function Home() {
    useEffect(()=>{
      const getcities= async ()=>{
         try {
-            const res = await axios.get("http://localhost:8800/api/cities");
+            const res = await axios.get("https://weather-map-qbtz.vercel.app//api/cities");
             setCities(res.data);
 
         } catch (err) {
