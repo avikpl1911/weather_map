@@ -44,7 +44,7 @@ const cities = ["MUMBAI",
                         
                     
 
-                    const responseu= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${c}&appid=16e2b1afb0ff599655b0274ac805473e`);
+                    const responseu= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${c}&appid=de3b3dbfae66682a0fe0d96012133c6b`);
                     
                     const dataa = responseu.data;
                     const newWeather = new weather(
