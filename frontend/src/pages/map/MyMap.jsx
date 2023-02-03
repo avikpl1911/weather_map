@@ -34,10 +34,10 @@ export default function MyMap() {
 
     useEffect(()=>{
        const getWeather = async ()=>{
-         const res= await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=de3b3dbfae66682a0fe0d96012133c6b`);
+         const res= await axios.get(`http://localhost:8800/api/weathers/${city}`);
          
-         setWeath(res.data.weather[0].main);
-         setCoords([res.data.coord.lat,res.data.coord.lon])
+         setWeath(res.data.data.weather[0].main);
+         setCoords([res.data.data.coord.lat,res.data.data.coord.lon])
 
        };
        getWeather();
