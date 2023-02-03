@@ -34,7 +34,7 @@ export default function MyMap() {
 
     useEffect(()=>{
        const getWeather = async ()=>{
-         const res= await axios.get(`https://weather-map-qbtz.vercel.app/api/weathers/${city}`);
+         const res= await axios.get(`https://weather-map-api.vercel.app/api/weathers/${city}`);
          
          setWeath(res.data.data.weather[0].main);
          setCoords([res.data.data.coord.lat,res.data.data.coord.lon])
