@@ -11,9 +11,9 @@ dotenv.config()
 
 setInterval(async()=>{
 
-    axios.post("http://localhost:8800/api/weathers/")
+    axios.post("https://weather-map-qbtz.vercel.app/api/weathers/")
 
-},50000)
+},500000)
 
 PORT = 2000 || process.env.PORT
 
