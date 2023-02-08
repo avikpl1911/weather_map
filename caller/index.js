@@ -11,14 +11,15 @@ dotenv.config()
 
 setInterval(async()=>{
 
-    await axios.post("https://weather-map-api.vercel.app/api/weathers/")
+    try{await axios.post("https://weather-map-api.vercel.app/api/weathers/")}
 
 },500000);
 
 //for first call
 
 async()=>{
-    await axios.post("https://weather-map-api.vercel.app/api/weathers/")
+try{await axios.post("https://weather-map-api.vercel.app/api/weathers/")}
+    
 }
 
 PORT = 2000 || process.env.PORT
